@@ -19,6 +19,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>ObjectCounter.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>StaticAssert.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>801285FF1CD8959C0071F4F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>80A9DC361CC4D0010088C8AF</key>
 		<dict>
 			<key>primary</key>
