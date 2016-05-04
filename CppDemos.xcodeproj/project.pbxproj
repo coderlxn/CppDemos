@@ -66,6 +66,7 @@
 		801286001CD8959C0071F4F4 /* ObjectCounter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjectCounter; sourceTree = BUILT_PRODUCTS_DIR; };
 		801286021CD8959C0071F4F4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		801286071CD895CA0071F4F4 /* counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = counter.h; sourceTree = "<group>"; };
+		801286081CD9E3190071F4F4 /* functionTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functionTable.h; sourceTree = "<group>"; };
 		80A9DC371CC4D0010088C8AF /* CppDemos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CppDemos; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A9DC3A1CC4D0010088C8AF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		80A9DC461CC4D0620088C8AF /* StaticAssert */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StaticAssert; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				80A9DC5E1CC4E0400088C8AF /* main.cpp */,
+				801286081CD9E3190071F4F4 /* functionTable.h */,
 			);
 			path = FunctionPointer;
 			sourceTree = "<group>";
@@ -520,6 +522,7 @@
 				801286051CD8959C0071F4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80A9DC321CC4D0010088C8AF /* Build configuration list for PBXProject "CppDemos" */ = {
 			isa = XCConfigurationList;

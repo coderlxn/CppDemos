@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include "functionTable.h"
 
 int inc(int a)
 {
@@ -34,5 +35,9 @@ int main(int argc, const char * argv[]) {
     // insert code here...
     int a;
     show(multi, 10, &a);
+    
+    SpaceShip station;
+    std::cout << typeid(station).name() << "\n";
+    
     return 0;
 }

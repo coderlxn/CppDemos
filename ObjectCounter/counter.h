@@ -58,9 +58,13 @@ class PrintJob {
 
 class Printer : private Counted<Printer> {
 public:
-    static Printer* makePrinter();
+    static Printer* makePrinter()
+    {
+        Printer* p = new Printer();
+        return p;
+    }
     static Printer* makePrinter(const Printer& rhs);
-    ~Printer();
+    ~Printer() {}
     void submitJob(const PrintJob& job);
     void reset();
     void performSelfTest();
@@ -69,13 +73,15 @@ public:
     using Counted<Printer>::objectCount;  //使函数objectCount()对于Printer是public
     using Counted<Printer>::TooManyObjects;
     
+    typedef void (Printer::*FunctionPtr) (Printer&);    //声明一种函数指针
+    
 private:
-    Printer();
+    Printer() {}
     Printer(const Printer& rhs);
     
 };
 
-
+template<typename Printer> int Counted<Printer>::numObjects = 0;
 template<typename Printer> const size_t Counted<Printer>::maxObjects = 10;
 
 #endif /* counter_h */
