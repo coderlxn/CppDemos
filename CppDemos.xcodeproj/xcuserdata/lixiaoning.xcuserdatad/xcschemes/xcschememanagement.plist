@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>CPPKeyWords.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>CppDemos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>801285FF1CD8959C0071F4F4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>802672EE1CDC37F700048415</key>
 		<dict>
 			<key>primary</key>
 			<true/>
