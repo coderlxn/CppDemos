@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>Cpp11Feature.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>CppDemos.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>802672EE1CDC37F700048415</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>802672FA1CDC63AB00048415</key>
 		<dict>
 			<key>primary</key>
 			<true/>
