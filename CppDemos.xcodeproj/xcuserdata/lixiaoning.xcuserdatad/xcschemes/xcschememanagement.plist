@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BoostDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>BuilderDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>800B26AA1CE85A5D00DB107D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>801285FF1CD8959C0071F4F4</key>
 		<dict>
 			<key>primary</key>
