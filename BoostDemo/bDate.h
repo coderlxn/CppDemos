@@ -51,6 +51,31 @@ void testDateTime()
     cout << d10 << endl;
     cout << d11 << endl;
     cout << d12 << endl;
+    
+    cout << "*********************** date caculate **********************" << endl;
+    date d13(2000, 1, 1), d14(2008, 8 , 8);
+    cout << d14 - d13 << endl;
+    assert(d13 + (d14 - d13) == d14);
+    
+    d13 += days(10);
+    assert(d13.day() == 11);
+    d13 += months(2);
+    assert(d13.month() == 3 && d13.day() == 11);
+    d13 -= weeks(1);
+    assert(d13.day() == 4);
+    
+    d14 -= years(7);
+    assert(d14.year() == d13.year() +  1);
+    
+    cout << "*********************** date print **********************" << endl;
+    date d15(2008, 11, 20);
+    date d_start(d15.year(), d15.month(), 1);
+    date d_end = d15.end_of_month();
+    
+    for (day_iterator d_iter(d_start); d_iter != d_end; ++d_iter)
+    {
+        cout << *d_iter << " " << d_iter->day_of_week() << endl;
+    }
 }
 
 #endif /* bDate_h */

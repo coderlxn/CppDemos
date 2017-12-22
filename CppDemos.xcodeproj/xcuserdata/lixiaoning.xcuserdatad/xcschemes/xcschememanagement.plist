@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BinaryToHex.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>BoostDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -34,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>MetaProgram.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>ObjectCounter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -63,6 +73,16 @@
 			<true/>
 		</dict>
 		<key>802672FA1CDC63AB00048415</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>806ACD6E1D34D6870083CFC8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>806ACD791D34DE5E0083CFC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
