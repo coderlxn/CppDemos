@@ -22,6 +22,7 @@
 #include "alignas.h"
 #include "unicode.h"
 #include "locale.h"
+#include "chronotime.h"
 
 
 void Func(initializer_list<int> iv) {} //通过initializer_list来初始化函数的参数列表
@@ -72,7 +73,7 @@ int main(int argc, const char * argv[]) {
 //    char x = { 2034 };   //使用列表初始化，在出现类型收窄时会编译失败
     
     ///////////字面量操作符
-//    literalOperator();
+    literalOperator();
     
     /////////////decltype
 //    testDecltype();
@@ -101,6 +102,9 @@ int main(int argc, const char * argv[]) {
     
     /////////////////////////locale
     testLocale();
+    
+    ///////////////////////// chrono 时间
+    chronotime();
     
     return 0;
 }
