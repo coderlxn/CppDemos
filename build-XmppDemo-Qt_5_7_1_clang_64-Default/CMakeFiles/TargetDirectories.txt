@@ -1,2 +1,0 @@
-/Users/lixiaoning/Program/CppDemos/build-XmppDemo-Qt_5_7_1_clang_64-Default/CMakeFiles/XmppDemo_automoc.dir
-/Users/lixiaoning/Program/CppDemos/build-XmppDemo-Qt_5_7_1_clang_64-Default/CMakeFiles/XmppDemo.dir
