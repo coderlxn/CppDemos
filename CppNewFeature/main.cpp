@@ -23,88 +23,89 @@
 #include "unicode.h"
 #include "locale.h"
 #include "chronotime.h"
+#include "smartPointer.h"
 
+void Func(initializer_list<int> iv) {} // 通过initializer_list来初始化函数的参数列表
 
-void Func(initializer_list<int> iv) {} //通过initializer_list来初始化函数的参数列表
-
-int main(int argc, const char * argv[]) {
+int main(int argc, const char *argv[])
+{
     // insert code here...
     std::cout << "Hello, World!\n";
-    
+
     Info i;
-    
+
     HasPtrMem a = GetTemp();
     cout << "Resource form " << __func__ << ": " << hex << a.d << endl;
-    
+
     Maythrow m;
     Nothrow n;
-    
-    Maythrow mt = move_if_noexcept(m);  //如果移动构造函数会抛出异常则使用拷贝构造函数代替
+
+    Maythrow mt = move_if_noexcept(m); // 如果移动构造函数会抛出异常则使用拷贝构造函数代替
     Nothrow nt = move_if_noexcept(n);
-    
+
     ////////////完美转发
     int a1;
     int b;
     const int c = 1;
     const int d = 0;
-    
+
     PerfectForward(a1);
     PerfectForward(move(b));
     PerfectForward(c);
     PerfectForward(move(d));
-    
+
     /////通过完美转发做包装函数
     PerfectForward(1.5, RunComp);
     PerfectForward(9, RunCade);
     PerfectForward(1.5, RunHome);
-    
-    
-    //初始化列表  通过{} 进行列表初始化
+
+    // 初始化列表  通过{} 进行列表初始化
     int arrayA[] = {1, 3, 5};
-    int arrayB[] {2, 4, 6};
+    int arrayB[]{2, 4, 6};
     vector<int> vectorC{1, 3, 5};
     map<int, float> mapD = {{1, 1.0f}, {2, 2.0f}, {5, 3.2f}};
-    
-    
+
     ////////////////////////通过initializer_list来初始化函数的参数列表，参数列表使用{}包含
     Func({1, 2});
     Func({});
-    
-//    char x = { 2034 };   //使用列表初始化，在出现类型收窄时会编译失败
-    
+
+    //    char x = { 2034 };   //使用列表初始化，在出现类型收窄时会编译失败
+
     ///////////字面量操作符
     literalOperator();
-    
+
     /////////////decltype
-//    testDecltype();
-    
-    
+    //    testDecltype();
+
     /////////////////// 模板元编程
-//    testTemplateMeta();
-    
+    //    testTemplateMeta();
+
     ///////////////////变长模板与完美转发
-//    templatePerfectMove();
-    
+    //    templatePerfectMove();
+
     ////////////////常量表达式
-//    testConstexpr();
-    
+    //    testConstexpr();
+
     //////////////////多线程
-//    testMultiThread();
-    
+    //    testMultiThread();
+
     //////////////////空指针 nullptr
-//    testNullptr();
-    
+    //    testNullptr();
+
     ////////////////////////地址对齐
     testAlignas();
-    
+
     ////////////////////////unicode
     testUnicode();
-    
+
     /////////////////////////locale
     testLocale();
-    
+
     ///////////////////////// chrono 时间
     chronotime();
-    
+
+    ///////////////////////// 智能指针
+    startPointer();
+
     return 0;
 }
